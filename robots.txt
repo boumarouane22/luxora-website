@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://boumarouane22.github.io/luxora-website/sitemap.xml
