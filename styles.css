@@ -794,19 +794,29 @@ html[dir="ltr"] .footer-content {
         width: 200px;
     }
 
+    /* تقليل ارتفاع Hero section على الهواتف */
+    .hero {
+        min-height: 80vh; /* تقليل من 100vh إلى 80vh */
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+
     .hero-content h1 {
         font-size: 3rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem; /* تقليل المسافة */
+        line-height: 1.1;
     }
 
     .hero-content h2 {
         font-size: 1.5rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.8rem; /* تقليل المسافة */
+        line-height: 1.2;
     }
     
     .hero-content p {
         font-size: 1.1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem; /* تقليل المسافة */
+        line-height: 1.5;
     }
 
     .hero-buttons {
@@ -927,20 +937,29 @@ html[dir="ltr"] .footer-content {
         padding: 0.5rem;
     }
 
+    /* تحسين Hero section للهواتف الصغيرة */
+    .hero {
+        min-height: 70vh; /* أقل من 80vh للهواتف الصغيرة */
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
     .hero-content h1 {
         font-size: 2.5rem;
-        line-height: 1.2;
+        line-height: 1.1;
+        margin-bottom: 0.5rem; /* تقليل المسافة أكثر */
     }
     
     .hero-content h2 {
         font-size: 1.3rem;
-        line-height: 1.3;
+        line-height: 1.2;
+        margin-bottom: 0.5rem; /* تقليل المسافة أكثر */
     }
 
     .hero-content p {
         font-size: 1rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
+        line-height: 1.5;
+        margin-bottom: 1.2rem; /* تقليل المسافة أكثر */
     }
 
     .hero-buttons .btn-primary,
@@ -951,11 +970,11 @@ html[dir="ltr"] .footer-content {
     }
 
     section {
-        padding: 60px 0;
+        padding: 25px 0; /* تقليل أكثر للهواتف الصغيرة */
     }
     
     .section-header {
-        margin-bottom: 3rem;
+        margin-bottom: 1.5rem; /* تقليل المساحة أكثر */
     }
     
     .section-header h2 {
@@ -1015,7 +1034,7 @@ html[dir="ltr"] .footer-content {
     }
 
     .forms-container {
-        gap: 2rem;
+        gap: 1.5rem; /* تقليل المساحة بين النماذج */
     }
     
     .howitworks-card,
@@ -1023,7 +1042,7 @@ html[dir="ltr"] .footer-content {
     .features-card,
     .service-card,
     .about-card {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.8rem; /* تقليل padding أكثر */
         margin: 0 5px;
     }
     
@@ -1032,8 +1051,9 @@ html[dir="ltr"] .footer-content {
     .features-card h3,
     .service-card h3,
     .about-card h3 {
-        font-size: 1.3rem;
-        margin-bottom: 0.8rem;
+        font-size: 1.2rem; /* تقليل حجم الخط قليلاً */
+        margin-bottom: 0.5rem; /* تقليل المسافة */
+        line-height: 1.3;
     }
     
     .howitworks-card p,
@@ -1042,7 +1062,8 @@ html[dir="ltr"] .footer-content {
     .service-card p,
     .about-card p {
         font-size: 0.9rem;
-        line-height: 1.6;
+        line-height: 1.5; /* تقليل line-height قليلاً */
+        margin-bottom: 0;
     }
     
     .contact-card {
@@ -1075,16 +1096,49 @@ html[dir="ltr"] .footer-content {
         padding: 0 10px;
     }
     
+    /* تحسين أكبر للـ Hero section */
+    .hero {
+        min-height: 60vh; /* أقل ارتفاع للشاشات الصغيرة جداً */
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2rem; /* تقليل أكثر */
+        line-height: 1.1;
+        margin-bottom: 0.3rem;
     }
     
     .hero-content h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem; /* تقليل أكثر */
+        line-height: 1.2;
+        margin-bottom: 0.3rem;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+    }
+    
+    /* تقليل المساحات بشكل كبير */
+    section {
+        padding: 20px 0; /* أقل padding */
+    }
+    
+    .section-header {
+        margin-bottom: 1rem; /* أقل margin */
     }
     
     .section-header h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem; /* تقليل أكثر */
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+    
+    .section-header p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
     
     .form-card,
@@ -1093,7 +1147,8 @@ html[dir="ltr"] .footer-content {
     .features-card,
     .service-card,
     .about-card {
-        padding: 1.2rem 0.8rem;
+        padding: 1rem 0.6rem; /* أقل padding */
+        margin: 0 2px;
     }
     
     .nav-menu li a {
