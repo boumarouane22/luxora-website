@@ -127,7 +127,7 @@ button, .btn-primary, .btn-secondary, .language-select, input, textarea, select 
                 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><rect fill="%23d4af37" width="1000" height="500"/><polygon fill="%23b8941f" points="0,500 250,400 500,450 750,350 1000,400 1000,500"/></svg>');
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
+    min-height: 85vh; /* تقليل من 100vh إلى 85vh للشاشات العادية */
     display: flex;
     align-items: center;
     color: white;
@@ -206,12 +206,12 @@ button, .btn-primary, .btn-secondary, .language-select, input, textarea, select 
 
 /* Section Styles */
 section {
-    padding: 80px 0;
+    padding: 50px 0; /* تقليل من 80px إلى 50px */
 }
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem; /* تقليل من 4rem إلى 2.5rem */
 }
 
 .section-header h2 {
@@ -741,12 +741,27 @@ html[dir="ltr"] .footer-content {
         padding: 0 30px;
     }
     
+    /* تقليل ارتفاع Hero للتابلت */
+    .hero {
+        min-height: 75vh;
+        padding-top: 60px;
+    }
+    
     .hero-content h1 {
         font-size: 4rem;
     }
     
     .hero-content h2 {
         font-size: 1.8rem;
+    }
+    
+    /* تقليل padding للأقسام */
+    section {
+        padding: 40px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 2rem;
     }
     
     .services-grid {
@@ -760,6 +775,22 @@ html[dir="ltr"] .footer-content {
 }
 
 @media (max-width: 768px) {
+    /* تقليل ارتفاع Hero للهواتف بشكل كبير */
+    .hero {
+        min-height: 70vh;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    /* تقليل padding للأقسام بشكل كبير */
+    section {
+        padding: 35px 0;
+    }
+    
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+    
     .navbar .container {
         flex-direction: column;
         gap: 1rem;
