@@ -83,6 +83,12 @@ const translations = {
         "contact.title": "تواصل معنا",
         "contact.subtitle": "نحن هنا للإجابة على جميع استفساراتك",
         "contact.email": "البريد الإلكتروني",
+        "contact.phone": "الهاتف",
+        "contact.address": "العنوان",
+        "contact.social.title": "تابعنا على",
+
+        // Footer
+        "footer.social.title": "تابعنا",
 
         // Page Title and Language Selector
         "page.title": "Luxora - الاستثمار العقاري بالتجزئة",
@@ -197,6 +203,12 @@ const translations = {
         "contact.title": "Contact Us",
         "contact.subtitle": "We are here to answer all your inquiries",
         "contact.email": "Email",
+        "contact.phone": "Phone",
+        "contact.address": "Address",
+        "contact.social.title": "Follow Us On",
+
+        // Footer
+        "footer.social.title": "Follow Us",
 
         // Page Title and Language Selector
         "page.title": "Luxora - Fractional Real Estate Investment",
@@ -363,6 +375,12 @@ const translations = {
         "contact.title": "Contattaci",
         "contact.subtitle": "Siamo qui per rispondere a tutte le tue domande",
         "contact.email": "Email",
+        "contact.phone": "Telefono",
+        "contact.address": "Indirizzo",
+        "contact.social.title": "Seguici Su",
+
+        // Footer
+        "footer.social.title": "Seguici",
 
         // Page Title and Language Selector
         "page.title": "Luxora - Investimenti Immobiliari Frazionali",
