@@ -677,7 +677,7 @@ section {
 }
 
 .social-links-large .social-link:nth-child(2):hover {
-    background: #0077b5; /* LinkedIn */
+    background: #d4af37; /* Website - Gold */
 }
 
 .social-links-large .social-link:nth-child(3):hover {
@@ -685,15 +685,7 @@ section {
 }
 
 .social-links-large .social-link:nth-child(4):hover {
-    background: #1877f2; /* Facebook */
-}
-
-.social-links-large .social-link:nth-child(5):hover {
     background: #ff0000; /* YouTube */
-}
-
-.social-links-large .social-link:nth-child(6):hover {
-    background: #0088cc; /* Telegram */
 }
 
 .contact-item p {
