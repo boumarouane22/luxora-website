@@ -93,6 +93,7 @@ const translations = {
         "lang.arabic": "العربية",
         "lang.english": "English",
         "lang.italian": "Italiano",
+        "mobile.language": "اللغة",
 
         // Form Labels - Job Application
         "form.job.name": "الاسم الكامل",
@@ -211,6 +212,7 @@ const translations = {
         "lang.arabic": "العربية",
         "lang.english": "English",
         "lang.italian": "Italiano",
+        "mobile.language": "Language",
 
         // Navigation
         "nav.howitworks": "How it Works",
@@ -381,6 +383,7 @@ const translations = {
         "lang.arabic": "العربية",
         "lang.english": "English",
         "lang.italian": "Italiano",
+        "mobile.language": "Lingua",
 
         // Navigation
         "nav.howitworks": "Come Funziona",

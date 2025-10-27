@@ -823,144 +823,6 @@ html[dir="ltr"] .footer-content {
     text-align: left;
 }
 
-/* Mobile Sidebar Styles */
-.mobile-menu-btn {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1001;
-}
-
-.mobile-menu-btn span {
-    width: 25px;
-    height: 3px;
-    background: #d4af37;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
-}
-
-.mobile-menu-btn.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.mobile-menu-btn.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-btn.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.mobile-sidebar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: #1a1a1a;
-    z-index: 1000;
-    transition: right 0.3s ease;
-    overflow-y: auto;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.mobile-sidebar.active {
-    right: 0;
-}
-
-.mobile-sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem;
-    border-bottom: 1px solid #333;
-}
-
-.mobile-sidebar-header h3 {
-    color: #d4af37;
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.mobile-close-btn {
-    background: none;
-    border: none;
-    color: #d4af37;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.mobile-nav-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.mobile-nav-menu li {
-    border-bottom: 1px solid #333;
-}
-
-.mobile-nav-link {
-    display: block;
-    padding: 1.2rem 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-}
-
-.mobile-nav-link:hover {
-    background: rgba(212, 175, 55, 0.1);
-    color: #d4af37;
-    padding-right: 2rem;
-}
-
-.mobile-language-switcher {
-    padding: 1.5rem;
-    border-top: 1px solid #333;
-    margin-top: auto;
-}
-
-.mobile-language-switcher label {
-    color: #fff;
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.mobile-language-select {
-    width: 100%;
-    padding: 0.8rem;
-    background: #333;
-    color: #fff;
-    border: 1px solid #555;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.mobile-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-}
-
-.mobile-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
     .container {
@@ -1005,31 +867,30 @@ html[dir="ltr"] .footer-content {
         padding: 0 15px;
     }
 
-    /* إخفاء القائمة العادية وإظهار زر الهامبرغر */
-    .nav-menu {
-        display: none;
-    }
-    
-    .language-switcher {
-        display: none;
-    }
-    
-    .mobile-menu-btn {
-        display: flex;
-    }
-
-    /* تعديل navbar للجوال */
+    /* Navigation */
     .navbar .container {
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
     }
     
-    .nav-brand {
-        order: 1;
+    .nav-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
     }
     
-    .mobile-menu-btn {
-        order: 2;
+    .nav-menu li a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        border-radius: 5px;
+        background: rgba(212, 175, 55, 0.1);
+    }
+    
+    .language-select {
+        width: 150px;
+        margin: 0 auto;
     }
 
     /* Hero Section */

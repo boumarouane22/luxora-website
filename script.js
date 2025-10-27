@@ -1,3 +1,79 @@
+// Mobile Sidebar Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileSidebar = document.getElementById('mobileSidebar');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+    const languageSelect = document.getElementById('languageSelect');
+    const mobileLanguageSelect = document.getElementById('mobileLanguageSelect');
+
+    // Open sidebar
+    function openSidebar() {
+        mobileSidebar.classList.add('active');
+        mobileOverlay.classList.add('active');
+        mobileMenuBtn.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Close sidebar
+    function closeSidebar() {
+        mobileSidebar.classList.remove('active');
+        mobileOverlay.classList.remove('active');
+        mobileMenuBtn.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    // Event listeners
+    mobileMenuBtn.addEventListener('click', openSidebar);
+    mobileCloseBtn.addEventListener('click', closeSidebar);
+    mobileOverlay.addEventListener('click', closeSidebar);
+
+    // Close sidebar when clicking nav links
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            closeSidebar();
+            
+            if (targetSection) {
+                setTimeout(() => {
+                    const headerHeight = document.querySelector('.header').offsetHeight;
+                    const targetPosition = targetSection.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }, 300);
+            }
+        });
+    });
+
+    // Sync language selectors
+    if (languageSelect && mobileLanguageSelect) {
+        languageSelect.addEventListener('change', function() {
+            mobileLanguageSelect.value = this.value;
+        });
+
+        mobileLanguageSelect.addEventListener('change', function() {
+            languageSelect.value = this.value;
+            // Trigger change event on main selector to update language
+            languageSelect.dispatchEvent(new Event('change'));
+            closeSidebar();
+        });
+    }
+
+    // Close sidebar on window resize if open
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            closeSidebar();
+        }
+    });
+});
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS

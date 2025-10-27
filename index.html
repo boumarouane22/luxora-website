@@ -62,6 +62,8 @@
                 <div class="nav-brand">
                     <h2>Luxora</h2>
                 </div>
+                
+                <!-- Menu for Desktop -->
                 <ul class="nav-menu">
                     <li><a href="#home" data-key="nav.home">الرئيسية</a></li>
                     <li><a href="#how-it-works" data-key="nav.howitworks">كيف يعمل</a></li>
@@ -69,6 +71,8 @@
                     <li><a href="#about" data-key="nav.about">عن Luxora</a></li>
                     <li><a href="#forms" data-key="nav.join">انضم إلينا</a></li>
                 </ul>
+                
+                <!-- Language Switcher -->
                 <div class="language-switcher">
                     <select id="languageSelect" class="language-select">
                         <option value="ar" data-key="lang.arabic">العربية</option>
@@ -76,8 +80,43 @@
                         <option value="it" data-key="lang.italian">Italiano</option>
                     </select>
                 </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
+        
+        <!-- Mobile Sidebar -->
+        <div class="mobile-sidebar" id="mobileSidebar">
+            <div class="mobile-sidebar-header">
+                <h3>Luxora</h3>
+                <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="إغلاق القائمة">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="mobile-nav-menu">
+                <li><a href="#home" data-key="nav.home" class="mobile-nav-link">الرئيسية</a></li>
+                <li><a href="#how-it-works" data-key="nav.howitworks" class="mobile-nav-link">كيف يعمل</a></li>
+                <li><a href="#vision" data-key="nav.vision" class="mobile-nav-link">الرؤية</a></li>
+                <li><a href="#about" data-key="nav.about" class="mobile-nav-link">عن Luxora</a></li>
+                <li><a href="#forms" data-key="nav.join" class="mobile-nav-link">انضم إلينا</a></li>
+            </ul>
+            <div class="mobile-language-switcher">
+                <label data-key="mobile.language">اللغة:</label>
+                <select id="mobileLanguageSelect" class="mobile-language-select">
+                    <option value="ar" data-key="lang.arabic">العربية</option>
+                    <option value="en" data-key="lang.english">English</option>
+                    <option value="it" data-key="lang.italian">Italiano</option>
+                </select>
+            </div>
+        </div>
+        
+        <!-- Mobile Overlay -->
+        <div class="mobile-overlay" id="mobileOverlay"></div>
     </header>
 
     <!-- Hero Section -->
