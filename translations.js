@@ -83,8 +83,6 @@ const translations = {
         "contact.title": "تواصل معنا",
         "contact.subtitle": "نحن هنا للإجابة على جميع استفساراتك",
         "contact.email": "البريد الإلكتروني",
-        "contact.phone": "الهاتف",
-        "contact.address": "العنوان",
         "contact.social.title": "تابعنا على",
 
         // Footer
@@ -203,8 +201,6 @@ const translations = {
         "contact.title": "Contact Us",
         "contact.subtitle": "We are here to answer all your inquiries",
         "contact.email": "Email",
-        "contact.phone": "Phone",
-        "contact.address": "Address",
         "contact.social.title": "Follow Us On",
 
         // Footer
@@ -375,8 +371,6 @@ const translations = {
         "contact.title": "Contattaci",
         "contact.subtitle": "Siamo qui per rispondere a tutte le tue domande",
         "contact.email": "Email",
-        "contact.phone": "Telefono",
-        "contact.address": "Indirizzo",
         "contact.social.title": "Seguici Su",
 
         // Footer
