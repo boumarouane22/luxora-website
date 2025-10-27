@@ -1026,7 +1026,7 @@ html[dir="ltr"] .footer-content {
 
 @media (max-width: 480px) {
     .container {
-        padding: 0 15px;
+        padding: 0 10px; /* تقليل padding أكثر */
     }
     
     .header {
@@ -1034,71 +1034,76 @@ html[dir="ltr"] .footer-content {
     }
     
     .navbar {
-        padding: 0.8rem 0;
+        padding: 0.6rem 0; /* تقليل أكثر */
     }
     
     .logo {
-        font-size: 1.8rem;
+        font-size: 1.6rem; /* تقليل قليلاً */
     }
     
     .nav-menu {
-        gap: 0.5rem;
+        gap: 0.3rem; /* تقليل المسافة */
     }
     
     .nav-menu li a {
-        padding: 0.6rem;
-        font-size: 0.9rem;
+        padding: 0.5rem 0.4rem; /* تقليل padding */
+        font-size: 0.8rem; /* تقليل الخط */
     }
     
     .language-select {
-        width: 150px;
-        font-size: 0.9rem;
-        padding: 0.5rem;
+        width: 120px; /* تقليل العرض */
+        font-size: 0.8rem;
+        padding: 0.4rem;
     }
 
     /* تحسين Hero section للهواتف الصغيرة */
     .hero {
-        min-height: 70vh; /* أقل من 80vh للهواتف الصغيرة */
-        padding-top: 40px;
-        padding-bottom: 10px;
+        min-height: 55vh; /* تقليل ارتفاع أكثر */
+        padding-top: 20px; /* تقليل أكثر */
+        padding-bottom: 5px;
     }
     
     .hero-content h1 {
-        font-size: 2.5rem;
-        line-height: 1.1;
-        margin-bottom: 0.5rem; /* تقليل المسافة أكثر */
+        font-size: 2.2rem; /* تقليل */
+        line-height: 1.0; /* تقليل line-height */
+        margin-bottom: 0.3rem; /* تقليل المسافة أكثر */
     }
     
     .hero-content h2 {
-        font-size: 1.3rem;
-        line-height: 1.2;
-        margin-bottom: 0.5rem; /* تقليل المسافة أكثر */
+        font-size: 1.2rem;
+        line-height: 1.1;
+        margin-bottom: 0.3rem; /* تقليل المسافة أكثر */
     }
 
     .hero-content p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-bottom: 1.2rem; /* تقليل المسافة أكثر */
+        font-size: 0.9rem;
+        line-height: 1.4; /* تقليل */
+        margin-bottom: 1rem; /* تقليل المسافة أكثر */
+    }
+
+    .hero-buttons {
+        gap: 0.8rem; /* تقليل المسافة بين الأزرار */
     }
 
     .hero-buttons .btn-primary,
     .hero-buttons .btn-secondary {
-        padding: 0.9rem 1.5rem;
-        font-size: 1rem;
+        padding: 0.8rem 1.2rem; /* تقليل padding */
+        font-size: 0.9rem;
         width: 100%;
     }
 
     section {
-        padding: 25px 0; /* تقليل أكثر للهواتف الصغيرة */
+        padding: 20px 0; /* تقليل أكثر للهواتف الصغيرة */
     }
     
     .section-header {
-        margin-bottom: 1.5rem; /* تقليل المساحة أكثر */
+        margin-bottom: 1rem; /* تقليل المساحة أكثر */
     }
     
     .section-header h2 {
-        font-size: 1.8rem;
-        line-height: 1.3;
+        font-size: 1.6rem; /* تقليل */
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
     }
     
     .section-header p {
@@ -1161,8 +1166,8 @@ html[dir="ltr"] .footer-content {
     .features-card,
     .service-card,
     .about-card {
-        padding: 1.2rem 0.8rem; /* تقليل padding أكثر */
-        margin: 0 5px;
+        padding: 1rem 0.8rem; /* تقليل padding أكثر */
+        margin: 0 3px 1rem 3px; /* إضافة margin bottom */
     }
     
     .howitworks-card h3,
@@ -1170,9 +1175,9 @@ html[dir="ltr"] .footer-content {
     .features-card h3,
     .service-card h3,
     .about-card h3 {
-        font-size: 1.2rem; /* تقليل حجم الخط قليلاً */
-        margin-bottom: 0.5rem; /* تقليل المسافة */
-        line-height: 1.3;
+        font-size: 1.1rem; /* تقليل حجم الخط أكثر */
+        margin-bottom: 0.4rem; /* تقليل المسافة */
+        line-height: 1.2;
     }
     
     .howitworks-card p,
@@ -1180,29 +1185,46 @@ html[dir="ltr"] .footer-content {
     .features-card p,
     .service-card p,
     .about-card p {
-        font-size: 0.9rem;
-        line-height: 1.5; /* تقليل line-height قليلاً */
+        font-size: 0.85rem; /* تقليل أكثر */
+        line-height: 1.4; /* تقليل line-height قليلاً */
         margin-bottom: 0;
     }
-    
+
+    /* تحسين Grid layouts للجوال */
+    .howitworks-grid,
+    .vision-grid,
+    .features-grid,
+    .services-grid,
+    .about-grid {
+        gap: 1rem; /* تقليل المسافة بين العناصر */
+    }
+
+    /* تحسين النماذج للجوال */
+    .forms-container {
+        gap: 1rem; /* تقليل المساحة بين النماذج */
+        padding: 0 5px;
+    }
+
+    /* تحسين Contact section */
     .contact-card {
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 0.8rem;
     }
     
     .contact-card h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     .contact-card p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
-    
+
+    /* تحسين Footer */
     .footer-content {
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
     
     .footer-content h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .footer-content p {
@@ -1312,4 +1334,75 @@ html[dir="ltr"] .footer-content {
     text-align: center;
     margin-top: 1rem;
     display: none;
+}
+
+/* تحسينات إضافية للجوال */
+@media (max-width: 520px) {
+    /* منع التمرير الأفقي */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    /* تحسين الأزرار للمس */
+    .btn-primary, .btn-secondary {
+        min-height: 44px; /* حجم مناسب للمس */
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* تحسين النصوص للقراءة السهلة */
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+
+    /* تحسين الصور للجوال */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* تحسين Social Media Links */
+    .social-links-large {
+        gap: 1rem;
+    }
+
+    .social-links-large .social-link {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-links-large .social-link span {
+        margin-right: 0.5rem;
+        font-size: 0.85rem;
+    }
+
+    /* تحسين النماذج */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 8px;
+    }
+
+    /* تحسين Navigation للجوال */
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* تحسين اللغة selector */
+    .language-select {
+        min-width: 100px;
+        max-width: 120px;
+    }
 }
